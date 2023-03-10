@@ -18,10 +18,10 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './components/header/header.component';
-import { HomeComponent } from './pages/home/home.component';
-import { ProductsHeaderComponent } from './pages/home/components/products-header/products-header.component';
-import { FiltersComponent } from './pages/home/components/filters/filters.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { HomeComponent } from './home/home.component';
+import { ProductsHeaderComponent } from './home/components/products-header/products-header.component';
+import { FiltersComponent } from './home/components/filters/filters.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
