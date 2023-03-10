@@ -1,0 +1,12 @@
+<mat-drawer-container
+  [autosize]="true"
+  class="min-h-full max-w-7xl mx-auto border-x"
+>
+  <mat-drawer class="p-6" mode="side" opened>
+    <app-filters (categoryChange)="onCategoryChange($event)" (selectAll)="onSelectAll($event)"/>
+  </mat-drawer>
+  <mat-drawer-content class="p-6">
+    <app-products-header (columnsCountChange)="onColumnsCountChange($event)"/>
+    <p *ngFor="let category of selectedCatergories">{{ category }}</p>
+  </mat-drawer-content>
+</mat-drawer-container>
